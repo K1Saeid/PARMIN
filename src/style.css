@@ -128,3 +128,17 @@ body{background:linear-gradient(90deg,#eaf4fc 0,#fff 5%,#fff 95%,#eaf4fc 100%)}
 .product:hover .product-art.product-photo img{transform:scale(1.065)}
 .product-art.product-photo em{position:absolute;z-index:2;top:12px;right:12px;background:#fffef0e8;color:#25465a;padding:5px 11px;border-radius:30px;font-size:11px;font-style:normal}
 @media(prefers-reduced-motion:reduce){.product-art.product-photo img{transition:none}.product:hover .product-art.product-photo img{transform:none}}
+
+/* PARMIN storefront imagery: editorial hero, campaigns, categories */
+.hero-art.hero-photographic{position:relative;min-height:360px;background-image:linear-gradient(90deg,rgba(21,40,59,.04),rgba(21,40,59,.13)),url("https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1400&q=85");background-size:cover;background-position:center;border-radius:inherit}
+.promo{position:relative;overflow:hidden;isolation:isolate}
+.promo>div{position:relative;z-index:2}
+.promo-visual{position:absolute;inset:0;z-index:-1;background-size:cover;background-position:center;transition:transform .5s ease}
+.promo:hover .promo-visual{transform:scale(1.05)}
+.promo-men{background-image:linear-gradient(90deg,rgba(17,36,52,.72),rgba(17,36,52,.2)),url("https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=1000&q=85")}
+.promo-gifts{background-image:linear-gradient(90deg,rgba(237,242,245,.92),rgba(237,242,245,.25)),url("https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1000&q=85")}
+.category-photo{overflow:hidden;background:#edf2f6}
+.category-photo img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .35s ease}
+.category:hover .category-photo img{transform:scale(1.07)}
+@media(max-width:700px){.hero-art.hero-photographic{min-height:260px;background-position:center}}
+@media(prefers-reduced-motion:reduce){.promo-visual,.category-photo img{transition:none}.promo:hover .promo-visual,.category:hover .category-photo img{transform:none}}
