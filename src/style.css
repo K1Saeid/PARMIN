@@ -121,3 +121,10 @@ body{background:linear-gradient(90deg,#eaf4fc 0,#fff 5%,#fff 95%,#eaf4fc 100%)}
 .feedback-panel h2{display:flex;align-items:center;gap:8px}
 @media(max-width:1100px){.admin-top-tools{gap:10px}.admin-date{display:none}.donut-layout{gap:8px}.donut{width:140px;height:140px}.donut:after{inset:28px}.donut-label{inset:37px}.admin-triple{grid-template-columns:1fr 1fr}.admin-triple .feedback-panel{grid-column:span 2}}
 @media(max-width:700px){.hero{min-height:310px}.hero-art{min-height:0;grid-row:auto}.hero-copy{padding:26px 15px}.hero-jewel{font-size:110px;top:15%}.hero-jewel-left{left:-7%}.hero-jewel-right{right:-7%}.hero-gem{display:none}.hero h1{font-size:24px}.hero p{font-size:12px}.promos .promo{height:126px}.category div{width:76px;height:76px}.product-art{height:155px}.admin-welcome h2{font-size:18px}.welcome-gem .brand-diamond{width:35px;height:35px}.welcome-gem>span:last-child{display:none}.admin-top-tools{margin-right:auto}.admin-top-tools>svg,.notification-bell{display:none}.admin-grids{grid-template-columns:1fr}.donut-layout{justify-content:space-around}.admin-triple{grid-template-columns:1fr}.admin-triple .feedback-panel{grid-column:auto}}
+
+/* PARMIN photographic product cards */
+.product-art.product-photo{position:relative;overflow:hidden;background:linear-gradient(145deg,#f0f5f8,#e0eaf0)}
+.product-art.product-photo img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .45s ease}
+.product:hover .product-art.product-photo img{transform:scale(1.065)}
+.product-art.product-photo em{position:absolute;z-index:2;top:12px;right:12px;background:#fffef0e8;color:#25465a;padding:5px 11px;border-radius:30px;font-size:11px;font-style:normal}
+@media(prefers-reduced-motion:reduce){.product-art.product-photo img{transition:none}.product:hover .product-art.product-photo img{transform:none}}
